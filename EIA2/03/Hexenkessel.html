@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Hexenkessel</title>
+	<link rel="stylesheet" href="Hexenkessel.css" type="text/css" media="screen" />
+	<script src="Hexenkessel.js" type="text/javascript" charset="utf-8" defer ></script>
+</head>
+
+<body>
+	<header>
+		<h1>Hexenkessel</h1>
+	</header>
+
+	<form>
+		<div id="BasicInfo">
+			<input placeholder="Name des Tranks" type="text" name="name" id="name">
+
+			<select name="Wirkung" id="wirkung" >
+				<option value="Wirkung">Wirkung</option>
+				<option value="Liebestrank">Liebestrank</option>
+				<option value="Stärketrank">Stärketrank</option>
+				<option value="Veritaserum">Veritaserum</option>
+			</select>
+
+			Dauer
+					
+			<textarea placeholder="Beschreibung, Risiken, Nebenwirkungen" type="text" name="beschreibung" id="beschreibung"></textarea>
+
+			<button id="BasicInfoB">Übernehmen</button>
+		
+		</div>
+
+		<div id="Anweisung">
+			Anweisung hinzufügen<br>
+			<select name="Zutat" id="Zutat">
+				<option value="Zutat" price="0">Zutat</option>
+				<option value="Spinnenbeine" price="1.5">Spinnenbeine</option>
+				<option value="Mäusepupse" price="2">Mäusepupse</option>
+				<option value="Echsenblut" price="2">Echsenblut</option>
+			</select>
+
+			Menge
+
+			<span id="slidertemp">
+				<span>
+					Temperatur: 0°C
+					<input type="range" name="temperatur" id="temperatur" min="0" max="500" step="10" value="100">
+					500°C
+				</span>
+				<output name="sqmmow" form="mowlawn" id="sqmmow">
+			</span>
+
+			<span id="sliderruehr">
+				<span>
+					Rühren: nicht
+					<input type="range" name="ruehren" id="ruehren" min="0" max="10" step="1" value="1">
+					sehr stark
+				</span>
+				<output name="sqmmow" form="mowlawn" id="sqmmow">
+			</span>
+
+			<fieldset>
+				<legend>Endbedingung</legend>
+				<select name="dauer" id="dauer" >
+					<option value="dauer">dauer</option>
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					
+				</select>
+				in Minuten<br>
+				Konsistenz:
+				<input type="radio" name="konsistenz" id="fest" value="fest" checked />
+				<label for="fest">fest</label>
+				<input type="radio" name="konsistenz" id="zaeh" value="zaeh" />
+				<label for="zaeh">zäh</label>
+				<input type="radio" name="konsistenz" id="duennfluessig" value="duennfluessig" />
+				<label for="duennfluessig">dünnflüssig</label>
+				<input type="radio" name="konsistenz" id="schleimig" value="schleimig" />
+				<label for="schleimig">schleimig</label>
+				<output name="pricearticle" form="pricearticle" id="priceartcile"></output>
+				<br>
+				Farbe
+			</fieldset>
+
+			<button id="AnweisungB">Übernehmen</button>
+		</div>
+	</form>
+	
+	<div>
+		<h2>Zusammengestelltes Rezept</h2>
+		<div id="rezept">
+			
+		</div>
+	</div>
+
+</body>
+
+</html>
