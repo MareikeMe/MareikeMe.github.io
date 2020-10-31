@@ -6,10 +6,12 @@ var Hexenkessel;
         console.log("Start");
         let basicinfo = document.querySelector("div#BasicInfo");
         let anweisung = document.querySelector("div#Anweisung");
-        let slider = document.querySelector("input#sqmmow");
+        let slidertemp = document.querySelector("input#temperatur");
+        let sliderruehr = document.querySelector("input#ruehren");
         basicinfo.addEventListener("change", handleChange);
         anweisung.addEventListener("change", handleChange);
-        slider.addEventListener("input", displaySquarmeters);
+        slidertemp.addEventListener("input", displaySquarmeters);
+        sliderruehr.addEventListener("input", displaySquarmeters);
     }
     function handleChange(_event) {
         let cart = document.querySelector("div#rezept");

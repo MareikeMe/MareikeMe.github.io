@@ -5,11 +5,13 @@ namespace Hexenkessel {
         console.log("Start");
         let basicinfo: HTMLDivElement = <HTMLDivElement>document.querySelector("div#BasicInfo");
         let anweisung: HTMLDivElement = <HTMLDivElement>document.querySelector("div#Anweisung");
-        let slider: HTMLInputElement = <HTMLInputElement>document.querySelector("input#sqmmow");
+        let slidertemp: HTMLInputElement = <HTMLInputElement>document.querySelector("input#temperatur");
+        let sliderruehr: HTMLInputElement = <HTMLInputElement>document.querySelector("input#ruehren");
 
         basicinfo.addEventListener("change", handleChange);
         anweisung.addEventListener("change", handleChange);
-        slider.addEventListener("input", displaySquarmeters);
+        slidertemp.addEventListener("input", displaySquarmeters);
+        sliderruehr.addEventListener("input", displaySquarmeters);
     }
 
     function handleChange(_event: Event): void {
