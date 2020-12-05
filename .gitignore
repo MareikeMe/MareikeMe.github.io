@@ -30,3 +30,5 @@ node_modules/@types/node/fs/promises.d.ts
 node_modules/@types/node/ts3.4/assert.d.ts
 node_modules/@types/node/ts3.6/base.d.ts
 node_modules/@types/node/ts3.6/index.d.ts
+package-lock.json
+package.json
