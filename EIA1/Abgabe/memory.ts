@@ -86,7 +86,6 @@ var dificulty = prompt("Bitte wähle einen Schwieigkeitsgrad (leicht, mittel ode
 
 //Array mischen
 
-
 //Karten darstellen
 
 //click event auf Karten, "aufdecken"
