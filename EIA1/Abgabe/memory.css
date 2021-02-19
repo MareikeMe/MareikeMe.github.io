@@ -1,0 +1,24 @@
+body{
+    background-image: white;
+   width: 1280px;
+    height: 800px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+img{
+    width: 50px;
+    height: 50px;
+}
+
+footer{
+    position: absolute;
+    bottom: 15px;
+    height: 40px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+

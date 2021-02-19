@@ -1,4 +1,4 @@
-namespace Hexenkessel {
+/*namespace Hexenkessel {
     window.addEventListener("load", handleLoad);
 
     function handleLoad(_event: Event): void {
@@ -37,4 +37,4 @@ namespace Hexenkessel {
         }
     }
 
-}
+}*/
